@@ -15,9 +15,12 @@ header{
         ul{
           display: flex;
           li{
-            padding: 0 10px;
-            &:hover{
-              background: $grey4;
+            a{
+              padding: 0 10px;
+              display: block;
+              &:hover{
+                background: $grey4;
+              }
             }
           }
         }
