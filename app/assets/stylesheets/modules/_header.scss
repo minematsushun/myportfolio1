@@ -1,0 +1,27 @@
+header{
+  background: $grey1;
+  .header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 60px;
+    .log{
+      padding-top: 10px;
+    }
+    .menu{
+      nav{
+        ul{
+          display: flex;
+          li{
+            padding: 0 10px;
+            &:hover{
+              background: $grey4;
+            }
+          }
+        }
+      }
+    }
+  }
+}

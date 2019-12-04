@@ -1,8 +1,13 @@
 %header
-  .logo
-    = image_tag 'logo.png', alt: 'mine_logo', height: '40px', width: 'auto', class: 'logo_img'
-  .menu
-    %nav
-      = link_to "テスト", "", class: "nav_btn"
-      = link_to "テスト", "", class: "nav_btn"
-      = link_to "テスト", "", class: "nav_btn"
+  .header
+    .log
+      = image_tag 'logo.png', alt: 'mine_logo', height: '40px', width: 'auto', class: 'logo_img'
+    .menu
+      %nav
+        %ul
+          %li
+            = link_to "テスト", "", class: "nav_btn"
+          %li
+            = link_to "テスト", "", class: "nav_btn"
+          %li
+            = link_to "テスト", "", class: "nav_btn"
