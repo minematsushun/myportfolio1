@@ -1,11 +1,30 @@
 .container
   .main
-    #profile.content
-      aaaa
-    #works.content
+    #top.contents
+    #profile.contents
+      .about
+        .title
+          %h2.center about
+          %h3.center 自己紹介
+        .content
+          = image_tag '', alt: '', height: '', width: '', class: ''
+          %ul
+            %li
+              aaa
+            %li
+              aaa
+            %li
+              aaa
+            %li
+              aaa
+        .btn_box
+          .btn
+            =link_to "a", ""
+
+    #works.contents
       iiii
-    #skills.content
+    #skills.contents
       uuuu
-    #contact.content
+    #contact.contents
       eeeee
 
