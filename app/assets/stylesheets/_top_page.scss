@@ -1,11 +1,29 @@
 .container{
   .main{
-    .content{
+    .contents{
       padding-top: 60px;
       height: calc(100vh);
     }
+    #top{
+      background: #eee;
+    }
     #profile{
+      margin: 0px auto;
       background: #fefefe;
+      .about{
+        padding-top: 8%;
+        width: 50%;
+        margin: 0 auto;
+        .title{
+          h2{
+            font-size: 2rem;
+          }
+          h3{
+            font-size: 4rem;
+            font-weight: 500;
+          }
+        }
+      }
     }
     #works{
       background: #eee;
