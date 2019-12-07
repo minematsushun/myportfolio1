@@ -1,8 +1,8 @@
 .container{
   .main{
     .contents{
-      padding-top: 60px;
-      height: calc(100vh);
+      height: calc(100vh - 100px);
+      padding: 4%;
     }
     #top{
       background: #eee;
@@ -11,7 +11,6 @@
       margin: 0px auto;
       background: #fefefe;
       .about{
-        padding-top: 8%;
         width: 50%;
         margin: 0 auto;
         .title{
@@ -21,6 +20,17 @@
           h3{
             font-size: 4rem;
             font-weight: 500;
+          }
+        }
+        .content{
+          padding-top: 2%;
+          display: flex;
+          .profile-image{
+            border-radius: 50%;
+          }
+          .profile_list{
+            text-align: center;
+            padding-left: 50px;
           }
         }
       }
