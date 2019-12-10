@@ -11,7 +11,7 @@
       margin: 0px auto;
       background: #fefefe;
       .about{
-        width: 50%;
+        max-width: 900px;
         margin: 0 auto;
         .title{
           h2{
@@ -20,12 +20,14 @@
           h3{
             font-size: 4rem;
             font-weight: 500;
+            margin-bottom: 2%;
           }
         }
         .content{
           padding-top: 2%;
           display: flex;
           .profile-image{
+            max-width: 250px;
             border-radius: 50%;
           }
           .profile_list{
