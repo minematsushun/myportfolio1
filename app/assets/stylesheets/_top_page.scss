@@ -5,7 +5,16 @@
       padding: 4%;
     }
     #top{
-      background: #eee;
+      background: $yellow;
+      h2{
+        color: $brown;
+        font-size: 50px;
+        line-height: calc(100vh - 100px);
+        text-align: center;
+        margin: 0 auto;
+        letter-spacing: 1.1rem;
+      }
+
     }
     #profile{
       margin: 0px auto;
