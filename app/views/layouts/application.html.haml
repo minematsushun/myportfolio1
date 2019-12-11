@@ -6,6 +6,7 @@
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    %link{:href => "https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP|Secular+One|Source+Sans+Pro&display=swap", :rel => "stylesheet"}/
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     = render "layouts/header"
