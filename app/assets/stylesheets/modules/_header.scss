@@ -20,10 +20,11 @@ header{
           display: flex;
           li{
             a{
+              font-family: 'Secular One', sans-serif;
               padding: 0 10px;
               display: block;
               &:hover{
-                background: $grey4;
+                background: $grey1;
               }
             }
           }
