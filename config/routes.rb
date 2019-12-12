@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: "mine#index"
+  root "mine#index"
 
 end
