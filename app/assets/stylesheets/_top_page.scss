@@ -158,3 +158,12 @@
     }
   }
 }
+
+footer{
+  background: $brown;
+  height: 50px;
+  .footer{
+    color: $white;
+    line-height: 50px;
+  }
+}
