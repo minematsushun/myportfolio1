@@ -17,6 +17,6 @@ class MineController < ApplicationController
   private
 
   def inquiry_params
-    params.require(:inquiry).permit(:email, :message)
+    params.require(:inquiry).permit(:email, :message, :name)
   end
 end
