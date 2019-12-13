@@ -111,17 +111,22 @@
             %span contact
           %h3.center お問合せ
         .content
-          = form_with(model: @inquiry) do |f|
-            .form_group
-              = f.label :name, 'お名前'
-              = f.text_field :name, class: 'form-control'
-            .form_group
-              = f.label :email, '返信先メールアドレス'
-              = f.text_field :email, class: 'form-control'
-            .form_group
-              = f.label :message, 'お問合せ内容'
-              = f.text_area :message, size: '10x10', class: 'form-control'
-            = f.submit '送信'
+          .form
+            = form_with(model: @inquiry) do |f|
+              %ul
+                %li.form_list
+                  .form_group
+                    = f.label :name, 'お名前'
+                    = f.text_field :name, class: 'form-control'
+                %li.form_list
+                  .form_group
+                    = f.label :email, 'メールアドレス'
+                    = f.text_field :email, class: 'form-control'
+                %li.form_list
+                  .form_group
+                    = f.label :message, 'お問合せ内容'
+                    = f.text_area :message, size: '30x2', class: 'form-control'
+              = f.submit '送信', class: "submit"
 
 %footer
   .footer.center
