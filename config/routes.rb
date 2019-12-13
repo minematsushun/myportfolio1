@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root "mine#index"
-  resources :mine, only: [:index, :create]
+  root "inquiries#index"
+  resources :inquiries, only: [:index, :create]
 end
