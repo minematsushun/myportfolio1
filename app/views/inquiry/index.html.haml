@@ -1,0 +1,129 @@
+.container
+  .main
+    #top.contents
+      .top_message
+        %h2
+          Update Tomorrow
+    #profile.contents
+      .about
+        .title
+          %h2.center
+            %span about
+          %h3.center 自己紹介
+        .content
+          = image_tag 'profile.jpg', alt: 'profile-image', class: 'profile-image'
+          %ul.profile_list
+            %li
+              名前：峰松 峻也(1990年生)
+            %li
+              出身地：広島県尾道市因島
+            %li
+              最終学歴：立命館大学経済学部
+            %li.profile_info
+              プログラミング勉強中。広告業界から憧れていたIT業界へと転職計画中です。エンジニアになり、いつもの生活がちょっぴりワクワクに変わるサービスを作りたいです。
+        -# .btn_box
+        -#   .btn
+        -#     =link_to "a", ""
+
+    #skills.contents
+      .about
+        .title
+          %h2.center
+            %span skill
+          %h3.center できること
+        .content
+          %ul.boxs.center
+            %li.box
+              %i.fas.fa-desktop
+              %h4
+                %span programming
+              %p HTML/CSSでのコーディングができます。WordPress、Rubyも現在勉強中です。
+            %li.box
+              %i.far.fa-clipboard
+              %h4
+                %span direction
+              %p パンフレット、名刺、WEBなどの制作ディレクションが可能です。クライアントの要望を形にするお手伝いをいたします。
+            %li.box
+              %i.fas.fa-paint-brush
+              %h4
+                %span illustration
+              %p ちょっとした挿絵などのイラスト制作が得意です。ペンタブで手書き感のあるイラストを描いています。
+    #works.contents
+      .about
+        .title
+          %h2.center
+            %span work
+          %h3.center 実績
+        .content
+          %ul.boxs.center
+            %li.box.work_box
+              .work1.work_bg
+                .work_info
+                  %h5
+                    %span 使用言語、開発環境
+                  %p Ruby / HTML / CSS / JQuery / github / AWS
+                  %p プログラミングスクールにてチーム開発を経験。AWSでのデプロイ、SNS認証、ウィザード式のformなどを担当。
+              メルカリコピーサイト
+            %li.box.work_box
+              .work2.work_bg
+                .work_info
+                  %h5
+                    %span 使用言語、開発環境
+                  %p Ruby / HTML / CSS / JQuery / github / AWS
+                  %p プログラミングスクールにて開発。非同期、インクルメンタルサーチを実装しました。
+              チャットアプリ
+            %li.box.work_box
+              .work3.work_bg
+                .work_info
+                  %h5
+                    %span 使用言語、開発環境
+                  %p WordPress / HTML / CSS / Xserver
+                  %p テンプテートと、プラグインを使って制作。イラストも描かせていただきました。
+              企業HP
+            %li.box.work_box
+              .work4.work_bg
+                .work_info
+                  %h5
+                    %span 使用言語、開発環境
+                  %p WordPress / HTML / CSS / Xserver
+                  %p テンプテートと、プラグインを使って制作。クライアントからヒアリングを行い、PC初心者の方でもWEB更新がしやすいよう制作しました。
+              企業HP
+            %li.box.work_box
+              .work5.work_bg
+                .work_info
+                  %h5
+                    %span 使用言語、開発環境
+                  %p WordPress / HTML / CSS / Xserver
+                  %p テンプテートと、プラグインを使って制作。サイトの立ち上げから更新の仕方までお伝えしながら制作をしました。
+              団体HP
+            %li.box.work_box
+              .work6.work_bg
+                .work_info
+                  %h5
+                    %span 使用言語、開発環境
+                  %p WordPress / PHP / HTML / CSS / Xserver
+                  %p 自作テンプテートを制作。自分用のブログとして独学で制作をしました。
+              ブログ
+    #contact.contents
+      .about
+        .title
+          %h2.center
+            %span contact
+          %h3.center お問合せ
+        .content
+          = form_with (model:@inquiry) do |f|
+            .form_group
+              = f.label :name, 'お名前'
+              = f.text_field :name, class: 'form-control'
+            .form_group
+              = f.label :email, '返信先メールアドレス'
+              = f.text_field :email, class: 'form-control'
+            .form_group
+              = f.label :message, 'お問合せ内容'
+              = f.text_area :mesage, size: '10x10', class: 'form-control'
+            = f.submit '送信'
+
+%footer
+  .footer.center
+    Copyright Mine All Rights Reserved.
+
