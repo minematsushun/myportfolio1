@@ -6,11 +6,10 @@ class InquiriesController < ApplicationController
   def create
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.save
-      binding.pry
       InquiryMailer.send_mail(@inquiry).deliver_now
-      flash[:success] = 'お問合せを受け付けました'
-      redirect_to root_path
+      redirect_to root_path, notice: 'お問合せを受け付けました'
     else
+      flash.now[:alert] = '必須項目を入力してください。'
       render :index
     end
   end
