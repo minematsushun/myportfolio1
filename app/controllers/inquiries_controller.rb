@@ -9,8 +9,7 @@ class InquiriesController < ApplicationController
       InquiryMailer.send_mail(@inquiry).deliver_now
       redirect_to root_path, notice: 'お問合せを受け付けました'
     else
-      flash.now[:alert] = '必須項目を入力してください。'
-      render :index
+      redirect_to root_path, alert: '必須項目を入力してください。'
     end
   end
 

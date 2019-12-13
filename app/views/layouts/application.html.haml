@@ -9,8 +9,8 @@
     %link{:href => "https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP|Secular+One|Source+Sans+Pro&display=swap", :rel => "stylesheet"}/
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    = render "layouts/header"
     .notifications
       - flash.each do |key, value|
         = content_tag(:div, value, class: key)
-    = render "layouts/header"
     = yield
