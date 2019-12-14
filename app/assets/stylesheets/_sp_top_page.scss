@@ -1,0 +1,114 @@
+// スマホの場合
+@media only screen and (max-width:700px){
+  .container{
+    // 共通
+    .main{
+      .contents{
+        width: 100%;
+        .about{
+          .title{
+            h2{
+              font-size: 3rem;
+            }
+            h3{
+              font-size: 4rem;
+            }
+          }
+          .content{
+            .boxs{
+              display: block;
+              .box{
+                width: 90%;
+                min-width: 200px;
+                margin: 20px auto 40px;
+                padding: 20px 20px;
+              }
+            }
+          }
+        }
+      }
+      // トップメッセージ
+      #top{
+        .top_message{
+          padding: 2px;
+          h2{
+            font-size: 3rem;
+            letter-spacing: .9rem;
+          }
+        }
+      }
+      // 自己紹介
+      #profile{
+        .content{
+          display: block;
+          .profile-image{
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 30px;
+          }
+          .profile_list{
+            width: 90%;
+            padding-left: 0px;
+            margin: 0 auto;
+          }
+        }
+      }
+      // できること
+      #skills{
+        .content{
+          .boxs{
+            .box{
+              padding: 30px;
+              i{
+                font-size: 3rem;
+              }
+              h4{
+                font-size: 2rem;
+                span{
+                  border-bottom: 1px solid $blue;
+                  letter-spacing: .3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      // 実績
+      #works{
+        .work_box{
+          .work_bg{
+            height: 300px;
+            .work_info{
+              padding: 20px;
+              h5{
+                margin-bottom: 40px;
+              }
+              p{
+                padding-bottom: 20px;
+                font-style: 18px;
+              }
+            }
+          }
+        }
+      }
+      // お問合せ
+      #contact{
+        .form{
+          width: 90%;
+          ul{
+            li{
+              .form_group{
+                input,textarea{
+                  width: 100%;
+                }
+              }
+            }
+          }
+          .submit{
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}

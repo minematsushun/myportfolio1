@@ -1,9 +1,9 @@
+// PCの場合
 .container{
   // 共通
   .main{
     .contents{
-      height: calc(100vh - 100px);
-      min-height: 700px;
+      min-height: calc(100vh - 100px);
       padding: 4%;
       .about{
         max-width: 900px;
