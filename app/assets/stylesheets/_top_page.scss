@@ -1,208 +1,210 @@
 // PCの場合
-.container{
-  // 共通
-  .main{
-    .contents{
-      min-height: calc(100vh - 100px);
-      padding: 4%;
-      .about{
-        max-width: 900px;
-        margin: 50px auto;
-        .title{
-          h2{
-            font-size: 2rem;
-            span{
+@media only screen and (min-width:701px){
+  .container{
+    // 共通
+    .main{
+      .contents{
+        min-height: calc(100vh - 100px);
+        padding: 4%;
+        .about{
+          max-width: 900px;
+          margin: 50px auto;
+          .title{
+            h2{
+              font-size: 2rem;
+              span{
+                letter-spacing: .2rem;
+                border-bottom: 4px solid $yellow;
+              }
+            }
+            h3{
+              font-size: 2.5rem;
+              font-weight: 500;
+              margin-bottom: 8%;
               letter-spacing: .2rem;
-              border-bottom: 4px solid $yellow;
             }
           }
-          h3{
-            font-size: 2.5rem;
-            font-weight: 500;
-            margin-bottom: 8%;
-            letter-spacing: .2rem;
-          }
-        }
-        .content{
-          padding-top: 2%;
-          .boxs{
-            display: flex;
-            flex-wrap: wrap;
-            .box{
-              width: 30%;
-              min-width: 200px;
-              background: #fefefe;
-              margin: 10px auto;
-              padding: 20px 10px;
-              border-radius: 4px;
-              box-shadow: 2px 2px 2px $grey4;
-            }
-          }
-        }
-      }
-    }
-    // トップメッセージ
-    #top{
-      height: calc(100vh);
-      background: $yellow;
-      h2{
-        color: $black;
-        font-size: 3rem;
-        text-align: center;
-        padding-top: calc(100vh / 2.5);
-        margin: 0 auto;
-        letter-spacing: 1.1rem;
-      }
-    }
-    // 自己紹介
-    #profile{
-      margin: 0px auto;
-      background: #fefefe;
-      .content{
-        display: flex;
-        .profile-image{
-          max-width: 250px;
-          border-radius: 50%;
-        }
-        .profile_list{
-          padding-left: 50px;
-          font-size: 18px;
-          line-height: 3rem;
-          .profile_info{
-            line-height: 2rem;
-          }
-        }
-      }
-    }
-    // できること
-    #skills{
-      background: $white;
-      .content{
-        .boxs{
-          .box{
-            i{
-              font-size: 2.4rem;
-              padding: 20px 20px 10px;
-            }
-            h4{
-              padding-bottom: 40px;
-              font-size: 1.5rem;
-              span{
-                border-bottom: 1px solid $blue;
-                letter-spacing: .3rem;
-              }
-            }
-            p{
-              text-align: left;
-              line-height: 1.8rem;
-            }
-          }
-        }
-      }
-    }
-    // 実績
-    #works{
-      min-height: 1000px;
-      .work_box{
-        padding: 0;
-        border: 3px solid $white;
-        .work_bg{
-          height: 250px;
-          width: 100%;
-          background-size: cover;
-          cursor: pointer;
-          .work_info{
-            display: none;
-            height: 100%;
-            background: $yellow;
-            opacity: .95;
-            padding: 5px;
-            h5{
-              padding-top: 20px;
-              margin-bottom: 20px;
-              span{
-                padding-bottom: 10px;;
-                border-bottom: 1px solid $blue;
-              }
-            }
-            p{
-              padding-bottom: 10px;
-            }
-          }
-          &:hover{
-            .work_info{
-              display: block;
-            }
-          }
-        }
-        .work1{
-          background-image: url("/images/merukari.png"); //public/imagesの中に画像保存
-        }
-        .work2{
-          background-image: url("/images/chatspace.png"); //public/imagesの中に画像保存
-        }
-        .work3{
-          background-image: url("/images/itm.jpg"); //public/imagesの中に画像保存
-        }
-        .work4{
-          background-image: url("/images/kaizoku.png"); //public/imagesの中に画像保存
-        }
-        .work5{
-          background-image: url("/images/otonatudoi.jpg"); //public/imagesの中に画像保存
-        }
-        .work6{
-          background-image: url("/images/mineblog.jpg"); //public/imagesの中に画像保存
-        }
-      }
-    }
-    // お問合せ
-    #contact{
-      background: $yellow;
-      .form{
-        width: 500px;
-        margin: 0 auto;
-        ul{
-          li{
-            list-style: none;
-            .form_group{
-              margin-bottom: 30px;
-              label{
-                margin-right: 20px;
-                width: 150px;
-                float: left;
-              }
-              input,textarea{
-                width: 300px;
-                padding: 10px;
-                border: 1px solid $grey4;
+          .content{
+            padding-top: 2%;
+            .boxs{
+              display: flex;
+              flex-wrap: wrap;
+              .box{
+                width: 30%;
+                min-width: 200px;
+                background: #fefefe;
+                margin: 10px auto;
+                padding: 20px 10px;
                 border-radius: 4px;
+                box-shadow: 2px 2px 2px $grey4;
               }
             }
           }
         }
-        .submit{
-          display: block;
-          width: 100px;
-          font-size: 20px;
-          border-radius: 4px;
+      }
+      // トップメッセージ
+      #top{
+        height: calc(100vh);
+        background: $yellow;
+        h2{
+          color: $black;
+          font-size: 3rem;
+          text-align: center;
+          padding-top: calc(100vh / 2.5);
           margin: 0 auto;
-          padding: 10px 20px;
-          cursor: pointer;
-          &:hover{
-            color: $white;
-            background: $blue;
+          letter-spacing: 1.1rem;
+        }
+      }
+      // 自己紹介
+      #profile{
+        margin: 0px auto;
+        background: #fefefe;
+        .content{
+          display: flex;
+          .profile-image{
+            max-width: 250px;
+            border-radius: 50%;
+          }
+          .profile_list{
+            padding-left: 50px;
+            font-size: 18px;
+            line-height: 3rem;
+            .profile_info{
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+      // できること
+      #skills{
+        background: $white;
+        .content{
+          .boxs{
+            .box{
+              i{
+                font-size: 2.4rem;
+                padding: 20px 20px 10px;
+              }
+              h4{
+                padding-bottom: 40px;
+                font-size: 1.5rem;
+                span{
+                  border-bottom: 1px solid $blue;
+                  letter-spacing: .3rem;
+                }
+              }
+              p{
+                text-align: left;
+                line-height: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+      // 実績
+      #works{
+        min-height: 1000px;
+        .work_box{
+          padding: 0;
+          border: 3px solid $white;
+          .work_bg{
+            height: 250px;
+            width: 100%;
+            background-size: cover;
+            cursor: pointer;
+            .work_info{
+              display: none;
+              height: 100%;
+              background: $yellow;
+              opacity: .95;
+              padding: 5px;
+              h5{
+                padding-top: 20px;
+                margin-bottom: 20px;
+                span{
+                  padding-bottom: 10px;;
+                  border-bottom: 1px solid $blue;
+                }
+              }
+              p{
+                padding-bottom: 10px;
+              }
+            }
+            &:hover{
+              .work_info{
+                display: block;
+              }
+            }
+          }
+          .work1{
+            background-image: url("/images/merukari.png"); //public/imagesの中に画像保存
+          }
+          .work2{
+            background-image: url("/images/chatspace.png"); //public/imagesの中に画像保存
+          }
+          .work3{
+            background-image: url("/images/itm.jpg"); //public/imagesの中に画像保存
+          }
+          .work4{
+            background-image: url("/images/kaizoku.png"); //public/imagesの中に画像保存
+          }
+          .work5{
+            background-image: url("/images/otonatudoi.jpg"); //public/imagesの中に画像保存
+          }
+          .work6{
+            background-image: url("/images/mineblog.jpg"); //public/imagesの中に画像保存
+          }
+        }
+      }
+      // お問合せ
+      #contact{
+        background: $yellow;
+        .form{
+          width: 500px;
+          margin: 0 auto;
+          ul{
+            li{
+              list-style: none;
+              .form_group{
+                margin-bottom: 30px;
+                label{
+                  margin-right: 20px;
+                  width: 150px;
+                  float: left;
+                }
+                input,textarea{
+                  width: 300px;
+                  padding: 10px;
+                  border: 1px solid $grey4;
+                  border-radius: 4px;
+                }
+              }
+            }
+          }
+          .submit{
+            display: block;
+            width: 100px;
+            font-size: 20px;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            cursor: pointer;
+            &:hover{
+              color: $white;
+              background: $blue;
+            }
           }
         }
       }
     }
   }
-}
 
-footer{
-  background: $brown;
-  height: 50px;
-  .footer{
-    color: $white;
-    line-height: 50px;
+  footer{
+    background: $brown;
+    height: 50px;
+    .footer{
+      color: $white;
+      line-height: 50px;
+    }
   }
 }
