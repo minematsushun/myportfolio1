@@ -128,6 +128,21 @@
               p{
                 padding-bottom: 10px;
               }
+              .btn{
+                a{
+                  display: inline-block;
+                  width: 40%;
+                  padding: 5px;
+                  margin: 0 auto;
+                  background: $blue;
+                  color: $white;
+                  cursor: pointer;
+                  &:hover{
+                    color: $blue;
+                    background: $white;
+                  }
+                }
+              }
             }
             &:hover{
               .work_info{
