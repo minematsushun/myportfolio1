@@ -4,14 +4,34 @@
       = image_tag 'logo.png', alt: 'mine_logo', height: '40px', width: 'auto', class: 'logo_img'
     .menu
       %nav
-        %ul
-          %li
-            = link_to "Top", "#top", class: "nav_btn"
-          %li
-            = link_to "About", "#profile", class: "nav_btn"
-          %li
-            = link_to "Skill", "#skills", class: "nav_btn"
-          %li
-            = link_to "Work", "#works", class: "nav_btn"
-          %li
-            = link_to "Contact", "#contact", class: "nav_btn"
+        .pc
+          %ul
+            %li
+              = link_to "Top", "#top", class: "nav_btn"
+            %li
+              = link_to "About", "#profile", class: "nav_btn"
+            %li
+              = link_to "Skill", "#skills", class: "nav_btn"
+            %li
+              = link_to "Work", "#works", class: "nav_btn"
+            %li
+              = link_to "Contact", "#contact", class: "nav_btn"
+        .sp-nav
+          .sp
+            %ul
+              %li
+                = link_to "Top", "#top", class: "nav_btn"
+              %li
+                = link_to "About", "#profile", class: "nav_btn"
+              %li
+                = link_to "Skill", "#skills", class: "nav_btn"
+              %li
+                = link_to "Work", "#works", class: "nav_btn"
+              %li
+                = link_to "Contact", "#contact", class: "nav_btn"
+          .navToggle
+            %span
+            %span
+            %span
+            %span
+              menu
