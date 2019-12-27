@@ -7,7 +7,9 @@ class InquiriesController < ApplicationController
     @inquiry = Inquiry.new(inquiry_params)
     if @inquiry.save
       InquiryMailer.send_mail(@inquiry).deliver_now
-      redirect_to root_path, notice: 'お問合せを受け付けました'
+      render text: 'root' and return
+      # ,notice: 'お問合せを受け付けました'
+      binding.pry
     else
       redirect_to root_path, alert: '必須項目を入力してください。'
     end
