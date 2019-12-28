@@ -127,7 +127,7 @@
           %h3.center お問合せ
         .content
           .form
-            = form_with(model: @inquiry) do |f|
+            = form_with(model: @inquiry, local: true) do |f|
               %ul
                 %li.form_list
                   .form_group
